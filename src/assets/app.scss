@@ -1,0 +1,36 @@
+body {
+  // Check SpinWheel.vue
+  font-family: 'Montserrat';
+
+  $background-color: #ffffff;
+
+  background: $background-color;
+  background: -moz-radial-gradient(center, circle cover, $background-color 0%, #0CC0DF 100%);
+  background: -webkit-radial-gradient(center, circle cover, $background-color 0%, rgb(255, 255, 255) 100%);
+  background: radial-gradient(circle at center, $background-color 0%, #0CC0DF 100%);
+  background-attachment: fixed;
+
+  margin: 0;
+
+  /**
+    * When a dialog modal is triggered, this value is used to hide the scrollbar and add a margin-right to the body.
+    * This fix is necessary when using ScrollPanel and there is no scrollbar width.
+    */
+  --scrollbar-width: 0 !important;
+}
+
+.p-tooltip {
+  font-family: 'Montserrat';
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+:not(li) > a {
+  color: var(--primary-color);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
