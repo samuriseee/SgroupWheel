@@ -56,7 +56,7 @@ onMounted(() => {
 .congrats {
   background: white;
   border-radius: 15px;
-  padding: 20px;
+  padding: 20px 30px;
   .congrats-content {
     display:flex;
     flex-direction: column;

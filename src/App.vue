@@ -3,7 +3,7 @@
   <ConfirmPopup></ConfirmPopup>
   <ScrollPanel class="h-screen">
     <div class="max-w-screen overflow-x-hidden overflow-y-hidden">
-      <div class="grid header text-center" style = "text-align: center;">
+      <div class="grid header text-center" style = "text-align: center; display:flex; justify-content: center">
         <img src="/img/Sgr_Logo-full-horizontal-white.png" class="image" style = "width: 200px; display: inline; margin: 30px 0px 0px 30px;"/>
         <p class="col-12 my-0 py-0 text-base sm:text-lg md:text-2xl">
           <span class="white-space-nowrap"></span>
@@ -15,7 +15,9 @@
         <SpinWheel></SpinWheel>
       </div>
     </div>
-    <Footer></Footer>
+    <Footer>
+      <div class="footer"></div>
+    </Footer>
   </ScrollPanel>
 
   <SidebarPanel></SidebarPanel>
@@ -223,5 +225,23 @@ onMounted(async () => {
   100% {
     transform: scale(2.25);
   }
+}
+
+div.footer {
+  width: 100vw;
+  height: 150vh;
+  margin: 0px;
+  padding: 0px;
+  background-size: 100% 110%;
+}
+
+.footer {
+  height: auto;
+  background-image: url('public/img/Garden of Dreams - A Ten-year recap (2).png') ;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 </style>

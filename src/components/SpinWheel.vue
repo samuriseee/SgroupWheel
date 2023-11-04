@@ -1,9 +1,9 @@
 <template>
   <div ref="container" class="flex spin-container">
     <picture>
-      <source srcset="/img/image.png" type="image.png" />
-      <source srcset="/img/image.png" type="image.png" />
-      <img src="/img/image.png" class="image" alt="background image" />
+      <source srcset="/img/Garden of Dreams - A Ten-year recap (1).png" type="image.png" />
+      <source srcset="/img/Garden of Dreams - A Ten-year recap (1).png" type="image.png" />
+      <img src="/img/Garden of Dreams - A Ten-year recap (1).png" class="image" alt="background image" />
     </picture>
     <div
       class="icon"
@@ -168,7 +168,7 @@ onMounted(() => {
   width: 200vw;
   height: 90vh;
 
-  margin-top: -3.5rem;
+  margin-top: -5rem;
   margin-bottom: -10vh;
   position: relative;
 
@@ -186,7 +186,8 @@ onMounted(() => {
 
   aspect-ratio: 1/1;
   width: 200vw;
-  height: 90vh;
+  height: 95vh;
+  min-height: 111vh;
 
   position: absolute;
   top: calc(calc(50%) - calc(90vh / 2));

@@ -15,9 +15,7 @@ body {
   $background-color: #ffffff;
 
   background: $background-color;
-  background: -moz-radial-gradient(center, circle cover, $background-color 0%, #0CC0DF 100%);
-  background: -webkit-radial-gradient(center, circle cover, $background-color 0%, rgb(255, 255, 255) 100%);
-  background: radial-gradient(circle at center, $background-color 0%, #0CC0DF 100%);
+  background: url('background.jpg') no-repeat fixed center;
   background-attachment: fixed;
 
   margin: 0;
