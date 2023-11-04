@@ -237,7 +237,7 @@ div.footer {
 
 .footer {
   height: auto;
-  background-image: url('public/img/Garden of Dreams - A Ten-year recap (2).png') ;
+  background-image: url('GardenOfDreams.png') ;
   object-fit: cover;
   background-repeat: no-repeat;
   position: fixed;

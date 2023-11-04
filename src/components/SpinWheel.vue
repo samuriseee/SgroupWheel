@@ -1,9 +1,9 @@
 <template>
   <div ref="container" class="flex spin-container">
     <picture>
-      <source srcset="/img/Garden of Dreams - A Ten-year recap (1).png" type="image.png" />
-      <source srcset="/img/Garden of Dreams - A Ten-year recap (1).png" type="image.png" />
-      <img src="/img/Garden of Dreams - A Ten-year recap (1).png" class="image" alt="background image" />
+      <source srcset="/img/GardenOfDreams(1).png" type="image.png" />
+      <source srcset="/img/GardenOfDreams(1).png" type="image.png" />
+      <img src="/img/GardenOfDreams(1).png" class="image" alt="background image" />
     </picture>
     <div
       class="icon"
