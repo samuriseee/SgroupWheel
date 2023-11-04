@@ -145,7 +145,6 @@ export class ItemService {
   }
 
   public removeItem = async (item: PouchDB.Core.ExistingDocument<IItem>) => {
-    alert("xxx")
     const _item: PouchDB.Core.ExistingDocument<IItem & PouchDB.Core.ChangesMeta> = item;
     _item._deleted = true;
     const result = await this.db.put(_item);

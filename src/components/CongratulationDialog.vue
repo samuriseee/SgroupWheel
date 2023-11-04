@@ -1,13 +1,16 @@
 <template>
-  <div class="congrats" ref="congrats" @click="removeItem">
+  <div class="congrats" ref="congrats">
     <div
       ref="label"
-      class="bounce-in-fwd text-8xl label text-center max-w-screen overflow-x-hidden"
-      style = "color: #51CBFF; font-family: monospace; font-size:200px"
+      class="congrats-content bounce-in-fwd text-8xl label text-center max-w-screen overflow-x-hidden"
+      style = "color: #51CBFF; font-size:200px"
     >
-      {{ dialogRef?.data.item.label }}
-    </div>
+      <div> {{ dialogRef?.data.item.label }} </div>
 
+    </div>
+    <div style="display: flex; justify-content: flex-end; position: relative; z-index: 999">
+      <Button @click="close" style="color: white; cursor: pointer;">Close</Button>
+    </div>
     <div v-for="i in 20" :key="i" class="blob pi pi-star-fill" :class="'blob-' + i"></div>
   </div>
 </template>
@@ -40,10 +43,6 @@ const playSound = () => {
   audio.volume = 0.7;
   audio.play();
 };
-const removeItem = () => {
-  itemService?.removeItem(dialogRef?.data.item);
-  close;
-}
 const close = () => {
   dialogRef?.value.close();
 };
@@ -54,6 +53,24 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
+.congrats {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  .congrats-content {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.closeButton {
+  position:relative;
+  z-index: 10;
+  padding: 0 5px;
+  background: #162a63;
+}
+
 .label {
   color: black;
   z-index: 2;
