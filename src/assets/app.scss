@@ -1,6 +1,16 @@
+@font-face {
+  font-family: 'UTM-AvoBold';
+  src: url("./Font/UTM-AvoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'UTM-AvoBold_Italic';
+  src: url("./Font/UTM-AvoBold_Italic.ttf") format("truetype");
+}
+
 body {
   // Check SpinWheel.vue
-  font-family: 'Montserrat';
+  font-family: 'UTM-AvoBold' !important;
 
   $background-color: #ffffff;
 
@@ -20,7 +30,7 @@ body {
 }
 
 .p-tooltip {
-  font-family: 'Montserrat';
+  font-family: 'UTM-AvoBold_Italic';
   font-size: 0.75rem;
   text-align: center;
   font-weight: 700;

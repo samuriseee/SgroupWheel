@@ -43,7 +43,7 @@ const properties = {
   itemLabelColors: ['#fff'],
   itemLabelBaselineOffset: -0.07,
   // Check app.scss
-  itemLabelFont: '"Mochiy Pop P One", "ZCOOL KuaiLe", "Jua"',
+  itemLabelFont: 'UTM-AvoBold',
   itemLabelFontSizeMax: 55,
   itemBackgroundColors: [
     '#56ACD1',
@@ -125,6 +125,14 @@ const openCongratulationDialog = ($event: {
   });
 };
 
+const removeItemFromWheel = ($event: {
+  type: 'rest';
+  currentIndex: number;
+  rotation: number;
+}) => {
+  itemService?.removeItem(Items.value![$event.currentIndex])
+}
+
 onMounted(() => {
   watch(Items, (newValue) => (wheel!.items = newValue!));
   watch(LabelLength, (newValue) => {
@@ -142,6 +150,7 @@ onMounted(() => {
   wheel.onRest = ($event) => {
     stopAndClearSound;
     openCongratulationDialog($event);
+    removeItemFromWheel($event);
   };
 
   // Workaround for itemLabelRadiusMax not working on first load.

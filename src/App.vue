@@ -4,7 +4,7 @@
   <ScrollPanel class="h-screen">
     <div class="max-w-screen overflow-x-hidden overflow-y-hidden">
       <div class="grid header text-center" style = "text-align: center;">
-        <img src="/img/sgr_logo.png" class="image" style = "width: 200px; display: inline; margin: 30px 0px 0px 30px;"/>
+        <img src="/img/Sgr_Logo-full-horizontal-white.png" class="image" style = "width: 200px; display: inline; margin: 30px 0px 0px 30px;"/>
         <p class="col-12 my-0 py-0 text-base sm:text-lg md:text-2xl">
           <span class="white-space-nowrap"></span>
           &nbsp;
