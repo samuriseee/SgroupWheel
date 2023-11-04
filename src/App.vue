@@ -237,7 +237,7 @@ div.footer {
 
 .footer {
   height: auto;
-  background-image: url('GardenOfDreams.png') ;
+  background-image: url('../public/img/GardenOfDreams(2).png') ;
   object-fit: cover;
   background-repeat: no-repeat;
   position: fixed;
