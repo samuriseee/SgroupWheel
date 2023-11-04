@@ -228,11 +228,12 @@ onMounted(async () => {
 }
 
 div.footer {
+
   width: 100vw;
-  height: 150vh;
+  height: 200vh;
   margin: 0px;
   padding: 0px;
-  background-size: 100% 110%;
+  background-size: 100% 105%;
 }
 
 .footer {
@@ -241,6 +242,7 @@ div.footer {
   object-fit: cover;
   background-repeat: no-repeat;
   position: fixed;
+  z-index: -10;
   bottom: 0;
   left: 0;
 }
